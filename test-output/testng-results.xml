@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-07T11:48:50Z" name="Default suite" finished-at="2022-12-07T11:51:15Z" duration-ms="144705">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-12-07T11:48:50Z" name="Default test" finished-at="2022-12-07T11:51:15Z" duration-ms="144705">
+      <class name="org.runner.Runner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:48:50Z" name="setUpClass" finished-at="2022-12-07T11:48:50Z" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:48:50Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:00Z" duration-ms="69700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Launching application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:00Z" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Login Screen Content"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:00Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:10Z" duration-ms="10103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Tapping only Login Button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:10Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:21Z" duration-ms="10264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Login with Invalid Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:21Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:31Z" duration-ms="10270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Login with Valid Username and Invalid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:31Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:41Z" duration-ms="10262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Login with Invalid Username and Invalid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:41Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:58Z" duration-ms="16338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Forget Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:58Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:50:58Z" duration-ms="45" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Remember Me"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:50:58Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:51:08Z" duration-ms="10293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate SalesIntel application Valid User Username and Valid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:51:08Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-07T11:51:14Z" duration-ms="6182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate application Logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate application login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:51:14Z" name="tearDownClass" finished-at="2022-12-07T11:51:15Z" duration-ms="488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="cucumberReportGenerate()[pri:0, instance:org.runner.Runner@5b6ec132]" started-at="2022-12-07T11:51:15Z" name="cucumberReportGenerate" finished-at="2022-12-07T11:51:16Z" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cucumberReportGenerate -->
+      </class> <!-- org.runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
