@@ -446,7 +446,7 @@ public class LoginPage extends Global {
 	@FindBy(xpath = "//span[contains(text(),'Within last 14 days')]")
 	private WebElement LastModifiedWithin14Days;
 
-	@FindBy(xpath = "(//span[contains(text(),'Custom')])[2]")
+	@FindBy(xpath = "(//span[contains(text(),'Custom')])[3]")
 	private WebElement CustomForLastModified;
 
 	@FindBy(xpath = "//label[contains(text(),'Address')]")
@@ -517,6 +517,9 @@ public class LoginPage extends Global {
 
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]/../../div[3]/div[1]/..")
 	private WebElement FirstCompanyInResult;
+
+	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]/../../div[3]/div[1]/../../../../div[2]/span")
+	private WebElement ExpandFirstCompanyInResult;
 	@FindBy(xpath = "(//input[@type='checkbox' and @title])[2]/../../div[3]/div[1]/a")
 	private WebElement FirstCompanyLinkInResult;
 	@FindBy(xpath = "(//span[contains(text(),'Chatbot') or contains(text(),'Hulu')])[3]")
@@ -1624,6 +1627,10 @@ public class LoginPage extends Global {
 
 	public WebElement getFirstCompanyInResult() {
 		return FirstCompanyInResult;
+	}
+
+	public WebElement getExpandFirstCompanyInResult() {
+		return ExpandFirstCompanyInResult;
 	}
 
 	public WebElement getFirstCompanyLinkInResult() {

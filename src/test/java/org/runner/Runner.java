@@ -6,7 +6,7 @@ import org.testng.annotations.AfterSuite;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features = "D:\\Automation\\Laptop Script\\SalesIntel_Portal_Prod_Automation-master\\src\\test\\resources\\Features\\New_UI_View\\" +
+@CucumberOptions(features = "D:\\Automation\\New_Revdriver\\SalesIntel_Portal_Prod_Automation-master\\src\\test\\resources\\Features\\New_UI_View\\" +
 		"" +
 		"" +
 		"" +

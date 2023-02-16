@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import com.opencsv.*;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -230,6 +231,57 @@ public class Global {
 
 	}
 
+	public static String ReadDataFromCSV(String header) throws Throwable{
+		try {
+
+			// Create an object of filereader
+			// class with CSV file as a parameter.
+			FileReader filereader = new FileReader("D:\\Automation\\SalesIntel\\CSV\\CompanyList.csv");
+
+			// create csvReader object passing
+			// file reader as a parameter
+			CSVReader csvReader = new CSVReader(filereader);
+			List<String[]> lines = csvReader.readAll();
+			String[] nextRecord;
+			String userName = "";
+			String password = "";
+			int rowCount = 0;
+			for (String[] row : lines) {
+				rowCount = rowCount + 1;
+				for (String cell : row) {
+					if (rowCount == 2) {
+						userName = row[0];
+						password = row[1];
+					}
+				}
+			}
+
+//			// read line by line
+//			String[] record = null;
+//
+//			while ((record = csvReader.readNext()) != null) {
+//				rowCount = rowCount + 1;
+//
+//				if(rowCount == 2) {
+//					userName = record[0];
+//					password = record[1];
+//				}
+//			}
+
+			System.out.print(userName + "\t" + password);
+			csvReader.close();
+
+			if(header == "username") {
+				return userName.toString();
+			} else {
+				return password.toString();
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return "";
+		}
+	}
 	public static String ReadDatafromJson(String arg1, String arg2) throws Throwable {
 		FileReader fileReader=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData_Folder\\TestData.json");
 		JSONParser jsonParser=new JSONParser();

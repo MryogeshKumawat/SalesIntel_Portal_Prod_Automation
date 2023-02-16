@@ -129,6 +129,12 @@ public class Steps extends Global {
 		log.info("User enter the correct password");
 	}
 
+	@When("Enter Valid Password Using CSV")
+	public void i_enter_the_password_Using_CSV() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),ReadDataFromCSV("password"));
+//		log.info("User enter the correct password");
+	}
+
 	@When("Enter Universal Valid Password")
 	public void i_enter_the_Universal_password() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getPassword(),
@@ -341,6 +347,12 @@ public class Steps extends Global {
 	public void i_enter_invalid_username() throws Throwable {
 		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(), ReadDatafromJson("Contact_Name", "InvalidUserName"));
 		log.info("User enter Invalid Username");
+	}
+
+	@When("Enter Invalid Username Using CSV")
+	public void i_enter_invalid_username_Using_CSV() throws Throwable {
+		enterData(PageObjectManager.getInstance().getLoginPage().getUserName(), ReadDataFromCSV("username"));
+//		log.info("User enter Invalid Username");
 	}
 
 //	@When("Enter Invalid Password")
@@ -3474,14 +3486,14 @@ public class Steps extends Global {
 	public void I_Click_Last_Modified_Filter() throws Throwable{
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedFilter());
-		log.info("User Click Result Last Modified");
+		log.info("User Click on Last Modified Date Filter");
 	}
 
 	@And("Click on Last Modified Dropdown")
 	public void I_Click_Last_Modified_Dropdown() throws Throwable{
 		Thread.sleep(2000);
 		clickButton(PageObjectManager.getInstance().getLoginPage().getLastModifiedDropDown());
-		log.info("User Click Result Last Modified Dropdown");
+		log.info("User Click on Last Modified Dropdown");
 		Thread.sleep(2000);
 	}
 
@@ -3707,7 +3719,7 @@ public class Steps extends Global {
 	@Then("Check the search results of Company lists")
 	public void I_Check_Search_results_For_Company_Lists() throws Throwable{
 		String AllListCompanyCount =PageObjectManager.getInstance().getLoginPage().getHumanVerifiedCompaniesCount().getText();
-		clickButton(PageObjectManager.getInstance().getLoginPage().getFirstCompanyInResult());
+		clickButton(PageObjectManager.getInstance().getLoginPage().getExpandFirstCompanyInResult());
 		Thread.sleep(2000);
 		System.out.println("There are Total "+AllListCompanyCount+" Companies for the list filter");
 		log.info("User Check the search results of Company lists");
